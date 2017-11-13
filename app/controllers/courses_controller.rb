@@ -71,4 +71,10 @@ class CoursesController < ApplicationController
     def course_params
       params.require(:course).permit(:name, :code, :description)
     end
+
+
+    def follow
+  redirect_to @course
+end
+
 end
